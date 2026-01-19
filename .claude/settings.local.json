@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run seed:*)",
+      "Bash(mysql:*)",
+      "Bash(node create-db.js:*)",
+      "Bash(npm run migrate:*)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(netstat:*)",
+      "Bash(taskkill:*)",
+      "Bash(findstr:*)",
+      "Bash(node update-name.js:*)",
+      "Bash(node add-oauth-columns.js:*)",
+      "Bash(git add:*)",
+      "Bash(git reset:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd Art of Karen: Full-stack community art platform with Google OAuth\n\nCreated a complete role-based art community website for Karen Duplisea featuring:\n\nBackend \\(Node.js/Express/TypeScript\\):\n- MySQL database with 9 tables for users, artworks, blog posts, videos\n- JWT authentication with Google OAuth integration via Passport\n- Role-based access control \\(Admin, Artist, Student, User\\)\n- Complete REST APIs for artworks, blog, videos, and user management\n- Image upload with Sharp for automatic thumbnail generation\n- Comprehensive input validation and error handling\n\nFrontend \\(React/Vite/Tailwind\\):\n- Responsive design with modern UI/UX\n- Google Sign In integration for easy authentication\n- Protected routes with role-based permissions\n- 12 complete pages: Home, Gallery, Blog, Dashboard, Upload, Profile, etc.\n- Authentication context with JWT token management\n- Real-time form validation and error feedback\n\nFeatures:\n- Artists can upload artwork with images, descriptions, and YouTube video links\n- Blog functionality for artists to share their creative journey\n- Student-artist relationship system for mentorship\n- Featured artwork showcase on homepage\n- Artwork collections and categories\n- Public gallery with pagination and filtering\n- Network accessible on both localhost and LAN \\(192.168.2.241\\)\n\nDatabase includes sample content:\n- 2 professional blog posts by Karen Duplisea\n- 3 demo user accounts \\(Artist, Student, Admin\\)\n\nServers configured on ports 4002 \\(backend\\) and 4005 \\(frontend\\) with full CORS support.\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git init:*)"
+    ]
+  }
+}
