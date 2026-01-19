@@ -5,14 +5,15 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0',
-    port: 4001,
+    port: 4002,
+    allowedHosts: ['artofkaren.com'],
     proxy: {
       '/api': {
-        target: 'http://localhost:4002',
+        target: 'http://192.168.2.30:4001',
         changeOrigin: true
       },
       '/uploads': {
-        target: 'http://localhost:4002',
+        target: 'http://192.168.2.30:4001',
         changeOrigin: true
       }
     }

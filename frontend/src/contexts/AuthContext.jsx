@@ -89,6 +89,11 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem('user', JSON.stringify(updatedUser));
   };
 
+  const setToken = async (token) => {
+    localStorage.setItem('token', token);
+    await loadProfile();
+  };
+
   const isAdmin = user?.role === 'admin';
   const isArtist = user?.role === 'artist';
   const isStudent = user?.role === 'student';
@@ -102,6 +107,7 @@ export const AuthProvider = ({ children }) => {
     register,
     logout,
     updateUser,
+    setToken,
     isAdmin,
     isArtist,
     isStudent,
